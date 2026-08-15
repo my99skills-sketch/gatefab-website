@@ -140,12 +140,9 @@ export default function HomePage() {
 
       {/* ARCHITECTS & BUILDERS TEASER */}
       <section className="container-page py-24 grid lg:grid-cols-2 gap-10 items-center">
-        <div className="blueprint-frame aspect-video bg-ink/5 border border-ink/10 overflow-hidden order-2 lg:order-1">
-  <img
-    src="/images/architects-builders.png"
-    alt="Gatefab architectural design, CAD, fabrication and installation services"
-    className="w-full h-full object-cover"
-  />
+        <div className="blueprint-frame aspect-video bg-ink/5 border border-ink/10 flex items-center justify-center order-2 lg:order-1">
+          <span className="text-ink/40 text-sm font-mono">[ architect/builder project photo ]</span>
+        </div>
 </div>
         <div className="order-1 lg:order-2">
           <div className="eyebrow mb-3">For Architects & Builders</div>
