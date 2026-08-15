@@ -59,13 +59,14 @@ export default function HomePage() {
         </div>
 
         <div className="lg:col-span-6">
-          <div className="blueprint-frame aspect-[4/5] md:aspect-[5/4] bg-ink/5 border border-ink/10 overflow-hidden">
-  <img
-    src="/images/gatefab-hero.jpg"
-    alt="Premium designer gate for a modern Bangalore villa"
-    className="w-full h-full object-cover"
-  />
-</div>
+          <div className="blueprint-frame aspect-[4/5] md:aspect-[5/4] bg-ink/5 border border-ink/10 flex items-center justify-center text-center p-8">
+            {/* Replace with a premium photo: modern villa + designer entrance gate.
+                See README "Replacing placeholder imagery" for guidance. */}
+            <p className="text-ink/40 text-sm font-mono max-w-xs">
+              [ HERO IMAGE PLACEHOLDER — modern villa entrance with designer gate, shot
+              on-site, architectural composition, no stock photography ]
+            </p>
+          </div>
         </div>
       </section>
 
