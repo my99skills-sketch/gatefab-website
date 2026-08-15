@@ -28,8 +28,8 @@ export const siteConfig = {
   },
 
   // PLACEHOLDER — must match Google Business Profile exactly
-  phone: '+91-REPLACE',
-  whatsappNumber: '91REPLACE', // digits only, country code first, no + or spaces
+  phone: '+91 7676760050',
+  whatsappNumber: '917676760050', // digits only, country code first, no + or spaces
   email: 'info@gatefab.in', // PLACEHOLDER — confirm
 
   // PLACEHOLDER — only include profiles that genuinely exist
