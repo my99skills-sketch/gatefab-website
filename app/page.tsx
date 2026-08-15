@@ -59,6 +59,7 @@ export default function HomePage() {
         </div>
 
         <div className="lg:col-span-6">
+          HEAD
           <div className="blueprint-frame aspect-[4/5] md:aspect-[5/4] bg-ink/5 border border-ink/10 flex items-center justify-center text-center p-8">
             {/* Replace with a premium photo: modern villa + designer entrance gate.
                 See README "Replacing placeholder imagery" for guidance. */}
@@ -67,6 +68,12 @@ export default function HomePage() {
               on-site, architectural composition, no stock photography ]
             </p>
           </div>
+
+          {/* DEV NOTE: swap for a real photo — modern villa entrance with a
+              designer gate, shot on-site. See README "Replacing placeholder
+              imagery". Not visible to site visitors as placeholder text. */}
+          <ImagePlaceholder className="aspect-[4/5] md:aspect-[5/4]" label="Gatefab designer gate at a Bangalore villa entrance" />
+ 25ee0a2 (Remove dev/placeholder text from production pages)
         </div>
       </section>
 
