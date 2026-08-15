@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-stone text-ink font-body antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+  :focus-visible {
+    outline: 2px solid theme('colors.bronze.DEFAULT');
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* Signature motif: thin corner brackets, like a technical/laser-cut drawing
+     annotation. Used to frame hero and project imagery consistently. */
+  .blueprint-frame {
+    @apply relative;
+  }
+  .blueprint-frame::before,
+  .blueprint-frame::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-color: theme('colors.bronze.DEFAULT');
+    z-index: 10;
+  }
+  .blueprint-frame::before {
+    top: -1px;
+    left: -1px;
+    border-top: 1.5px solid;
+    border-left: 1.5px solid;
+  }
+  .blueprint-frame::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 1.5px solid;
+    border-right: 1.5px solid;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs tracking-widest2 uppercase text-bronze;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-6 md:px-10;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-ink text-paper px-7 py-3.5 text-sm tracking-wide uppercase font-body hover:bg-bronze-dark transition-colors duration-200;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 border border-ink/30 text-ink px-7 py-3.5 text-sm tracking-wide uppercase font-body hover:border-ink transition-colors duration-200;
+  }
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 text-sm font-medium hover:brightness-95 transition;
+  }
+}
